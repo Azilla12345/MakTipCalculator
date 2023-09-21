@@ -36,11 +36,12 @@ public class TipCalculator {
 
 
 
-        System.out.println(total_cost);
-        System.out.println(total_tip);
-        System.out.println(full_cost);
-        System.out.println(person_before_tip);
-        System.out.println(person_after_tip);
-        System.out.println(cost_per_person);
+        System.out.println("Original cost: " + total_cost);
+        System.out.println("Tip: " + tip + "%");
+        System.out.println("Tip cost: " + total_tip);
+        System.out.println("Total cost: " + full_cost);
+        System.out.println("Cost per person before tip: " + person_before_tip);
+        System.out.println("Cost per person for tip: " + person_after_tip);
+        System.out.println("Cost per person after tip: " + cost_per_person);
     }
 }
