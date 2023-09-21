@@ -1,6 +1,11 @@
 import java.util.Scanner;
 
 public class TipCalculator {
+
+    public static String format(double price) {
+        return String.format("%.2f", price);
+    }
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Hello, please enter your name: ");
@@ -36,12 +41,12 @@ public class TipCalculator {
 
 
 
-        System.out.println("Original cost: " + total_cost);
+        System.out.println("Original cost: $" + format(total_cost));
         System.out.println("Tip: " + tip + "%");
-        System.out.println("Tip cost: " + total_tip);
-        System.out.println("Total cost: " + full_cost);
-        System.out.println("Cost per person before tip: " + person_before_tip);
-        System.out.println("Cost per person for tip: " + person_after_tip);
-        System.out.println("Cost per person after tip: " + cost_per_person);
+        System.out.println("Tip cost: $" + format((total_tip)));
+        System.out.println("Total cost: $" + format(full_cost));
+        System.out.println("Cost per person before tip: $" + format(person_before_tip));
+        System.out.println("Cost per person for tip: $" + format(person_after_tip));
+        System.out.println("Cost per person after tip: $" + format(cost_per_person));
     }
 }
