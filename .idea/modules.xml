@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LastNameTipCalculator.iml" filepath="$PROJECT_DIR$/LastNameTipCalculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MakTipCalculator.iml" filepath="$PROJECT_DIR$/MakTipCalculator.iml" />
     </modules>
   </component>
 </project>
