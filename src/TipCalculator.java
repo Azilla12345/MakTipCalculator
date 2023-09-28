@@ -1,10 +1,13 @@
 import java.util.Scanner;
 
+
 public class TipCalculator {
+
 
     public static String format(double price) {
         return String.format("%.2f", price);
     }
+
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -16,6 +19,7 @@ public class TipCalculator {
         System.out.print("What's the the tip percentage (0-100): ");
         double tip = scan.nextDouble();
 
+
         double answer = 0.0;
         double total_cost = 0.00;
         double total_tip;
@@ -23,6 +27,9 @@ public class TipCalculator {
         double person_before_tip;
         double person_after_tip;
         double cost_per_person;
+        double tax;
+        double taxes;
+
 
         while (answer != -1) {
             System.out.print("Enter the cost of the item (enter -1 once finished): ");
@@ -31,13 +38,20 @@ public class TipCalculator {
                 total_cost += answer;
             }
 
+
         }
+
 
         total_tip = (total_cost / tip);
         full_cost = (total_cost + total_tip);
         person_before_tip = (total_cost / people);
         person_after_tip = (total_tip / people);
         cost_per_person = (full_cost / people);
+        tax = (full_cost/22);
+        taxes = (full_cost + tax);
+
+
+
 
 
 
@@ -48,5 +62,8 @@ public class TipCalculator {
         System.out.println("Cost per person before tip: $" + format(person_before_tip));
         System.out.println("Cost per person for tip: $" + format(person_after_tip));
         System.out.println("Cost per person after tip: $" + format(cost_per_person));
+        System.out.println("Taxes: " + format(tax));
+        System.out.println("Final cost: " + format(taxes));
     }
 }
+
