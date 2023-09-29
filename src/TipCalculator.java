@@ -55,7 +55,7 @@ public class TipCalculator {
         person_before_tip = (total_cost / people);
         person_after_tip = (total_tip / people);
         cost_per_person = (full_cost / people);
-        tax = (full_cost/22);
+        tax = (full_cost/10);
         taxes = (full_cost + tax);
 
 
